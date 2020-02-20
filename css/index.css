@@ -169,8 +169,27 @@ img {
   margin: 0 auto;
 }
 nav {
-  border: 1px solid black;
+  border-bottom: 2px dashed #C0C0C0;
+  padding-bottom: 5%;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width:500px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+}
+@media (max-width:500px) {
+  nav a {
+    padding: 4%;
+  }
 }
 .footer {
   width: 100%;
@@ -183,9 +202,22 @@ nav {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width:500px) {
+  .home {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
 .home .welcomeP {
   border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 2%;
+}
+@media (max-width:500px) {
+  .home .welcomeP {
+    width: 80%;
+    text-align: justify;
+    margin-left: 10%;
+  }
 }
 .home .welcomeP img {
   margin-bottom: 2%;
@@ -196,13 +228,30 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-section {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 30px;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 90%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -210,6 +259,13 @@ nav {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width:500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+    width: 75%;
+    margin: 0 auto 30px;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -232,9 +288,21 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 .home .content-pick .destination .btn {
   display: block;

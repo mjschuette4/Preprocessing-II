@@ -1,1 +1,22 @@
 // Navigation Styles here
+    nav{
+        border-bottom: 2px dashed @navigation-border;
+        padding-bottom: 5%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @media @mobile {
+          display:block;
+          text-align:center;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.4rem;
+            @media @mobile {
+                padding: 4%;
+            }
+        }
+    }
+

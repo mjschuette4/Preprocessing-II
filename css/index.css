@@ -1,318 +1,157 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;	
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-  line-height: 1;
+    line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
+ol, ul {
+	list-style: none;
 }
-blockquote,
-q {
-  quotes: none;
+blockquote, q {
+	quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-* {
-  box-sizing: border-box;
+/* End Reset */
+/* Begin CSS Code */
+*{
+    border: 1px solid black;
 }
-html {
-  font-size: 62.5%;
+html body{
+    background-image: url("https://images.unsplash.com/photo-1555505019-8c3f1c4aba5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-attachment: fixed;
+    background-position: center;
+    color: black;
 }
-html,
-body {
-  font-family: 'Roboto', sans-serif;
+body{
+    line-height: 2;
+    padding:0 1%;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Indie Flower', cursive;
+header{
+    padding: 3% 0;
+    margin: 3% 0;
+    background-color: beige;
 }
-h1 {
-  font-size: 4rem;
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 auto;
+    padding-right: 5%;
+    padding-left: 5%;
 }
-h2 {
-  font-size: 3.2rem;
-  padding-bottom: 10px;
+.rightHeader{
+    display:flex;
+    justify-content: space-between;   
+    width: 40%;
+    margin: 3% 0;
 }
-h4 {
-  font-size: 2.5rem;
-  padding-bottom: 10px;
+nav a{
+    text-decoration: none;  
+    color: black;
 }
-p {
-  line-height: 1.5;
-  font-size: 1.6rem;
-  padding-bottom: 10px;
+.bannerLogo{
+    position: relative;
+    height: 350px;
 }
-img {
-  max-width: 100%;
-  height: auto;
+.allFeatures{
+    display: flex;
+    flex-direction: column;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-nav {
-  border-bottom: 2px dashed #C0C0C0;
-  padding-bottom: 5%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-@media (max-width:500px) {
-  nav {
-    display: block;
+
+.allFeatures h2{
     text-align: center;
-  }
+    margin: 0 auto;
+    background-color:beige;
 }
-nav a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.4rem;
+.featuresSection{
+    display:flex;
+    flex-direction: row;
+    margin:3% 2%;   
 }
-@media (max-width:500px) {
-  nav a {
-    padding: 4%;
-  }
+@media (max-width: 800px){
+    .featuresSection{
+        flex-direction: column;
+    }
 }
-.footer {
-  width: 100%;
-  border-top: 2px dashed silver;
-  background: #FFEBCD;
+.features{
+    margin: 0 3%;
+    background-color:beige;
 }
-.footer p {
-  text-align: center;
-  color: #212529;
-  font-size: 1.6rem;
-  padding: 20px;
+@media (max-width: 800px){
+    .features{
+        margin: 3% 0;
+    }
 }
-@media (max-width:500px) {
-  .home {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
+.pSection{
+    margin: 3% 0;
+    background-color: beige;
 }
-.home .welcomeP {
-  border-bottom: 2px dashed #C0C0C0;
-  padding-bottom: 2%;
+footer {
+    text-align: center;
+  
+    margin: 0 auto;
+    background-color: beige;
 }
-@media (max-width:500px) {
-  .home .welcomeP {
-    width: 80%;
-    text-align: justify;
-    margin-left: 10%;
-  }
+@media (max-width: 500px){
+    footer{      
+        margin: 0 auto;
+    }
 }
-.home .welcomeP img {
-  margin-bottom: 2%;
+@media (max-width: 800px){
+    footer{     
+        margin: 0 auto;
+    }
 }
-.home .content-section {
-  margin: 30px 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+/* Styling for Our Team Page */
+.individualContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 3% 0;
 }
-@media (max-width:500px) {
-  .home .content-section {
-    flex-direction: column;
-    width: 80%;
-    margin: 0 auto 30px;
-  }
+@media (max-width: 800px){
+    .individualContainer{
+        flex-direction: column;
+    }
 }
-.home .content-section .text-content {
-  width: 48%;
-  padding-right: 1%;
+.individualContainer img {
+    display: flex;    
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin: 2%;
 }
-@media (max-width:500px) {
-  .home .content-section .text-content {
-    width: 100%;
-  }
+.individualContainer div{
+    background-color: beige;
 }
-.home .content-section .img-content {
-  width: 48%;
-  padding-left: 1%;
-}
-@media (max-width:500px) {
-  .home .content-section .img-content {
-    width: 90%;
-  }
-}
-.home .content-section .img-content img {
-  border-radius: 10px;
-}
-.home .inverse-content {
-  padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
-}
-@media (max-width:500px) {
-  .home .inverse-content {
-    flex-direction: column-reverse;
-    width: 75%;
-    margin: 0 auto 30px;
-  }
-}
-.home .inverse-content .text-content {
-  padding-left: 1%;
-  padding-right: 0;
-}
-.home .inverse-content .img-content {
-  padding-right: 1%;
-  padding-left: 0;
-}
-.home .content-destination {
-  width: 75%;
-  margin: 0 auto 30px;
-}
-.home .content-destination img {
-  border-radius: 10px;
-}
-.home .content-pick {
-  padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
-  display: flex;
-  justify-content: space-between;
-}
-@media (max-width:500px) {
-  .home .content-pick {
-    flex-direction: column;
-  }
-}
-.home .content-pick .destination {
-  width: 30%;
-  margin-bottom: 30px;
-}
-@media (max-width:500px) {
-  .home .content-pick .destination {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-.home .content-pick .destination .btn {
-  display: block;
-  text-align: center;
-  padding: 4%;
-  background-color: #17A2B8;
-  cursor: pointer;
-  width: 80%;
-  height: 35px;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  color: #FFFFFF;
-}
+/* beige boxes? */
